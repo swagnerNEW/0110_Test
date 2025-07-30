@@ -7,28 +7,39 @@
   <style>
     body {
       font-family: sans-serif;
-      text-align: center;
-      padding: 2em;
       background-color: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
     }
 
     h1 {
       color: #c0392b;
-      margin-bottom: 2em;
+      margin-bottom: 40px;
+      font-size: 2em;
+    }
+
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+      max-width: 320px;
     }
 
     .button {
       display: block;
-      width: 100%;
-      max-width: 300px;
-      margin: 1em auto;
-      padding: 1.5em;
+      padding: 20px;
       font-size: 1.5em;
       font-weight: bold;
       color: white;
       background-color: #e74c3c;
       border: none;
       border-radius: 12px;
+      text-align: center;
       text-decoration: none;
       transition: background-color 0.3s ease;
     }
@@ -48,7 +59,9 @@
 </head>
 <body>
   <h1>Notruf</h1>
-  <a href="tel:110" class="button">110</a>
-  <a href="tel:112" class="button secondary">112</a>
+  <div class="button-container">
+    <a href="tel:110" class="button">110</a>
+    <a href="tel:112" class="button secondary">112</a>
+  </div>
 </body>
 </html>
