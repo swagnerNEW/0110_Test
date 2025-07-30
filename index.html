@@ -1,42 +1,40 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <title>Notruf 110</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Notruf</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f8f9fa;
+      font-family: sans-serif;
       text-align: center;
-      padding: 50px;
+      padding: 2em;
+      background-color: #f4f4f4;
     }
-
     h1 {
-      color: #c1121f;
+      color: #c0392b;
     }
-
-    .call-btn {
-      background-color: #c1121f;
-      color: white;
-      border: none;
-      padding: 20px 40px;
-      font-size: 1.5rem;
-      border-radius: 10px;
-      cursor: pointer;
-      text-decoration: none;
+    .button {
       display: inline-block;
-      margin-top: 30px;
+      margin: 1em;
+      padding: 1em 2em;
+      font-size: 1.2em;
+      color: white;
+      background-color: #e74c3c;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
     }
-
-    .call-btn:hover {
-      background-color: #a20e1a;
+    .button.secondary {
+      background-color: #2980b9;
     }
   </style>
 </head>
 <body>
-  <h1>Notruf 110</h1>
-  <p>Bei einem Notfall sofort die Polizei rufen:</p>
-  <a href="tel:0110" class="call-btn">Jetzt 110 anrufen</a>
+  <h1>Notruf</h1>
+  <p>Wählen Sie den gewünschten Notrufdienst:</p>
+
+  <a href="tel:110" class="button">110 – Polizei</a>
+  <a href="tel:112" class="button secondary">112 – Feuerwehr / Rettung</a>
 </body>
 </html>
