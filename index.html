@@ -11,30 +11,44 @@
       padding: 2em;
       background-color: #f4f4f4;
     }
+
     h1 {
       color: #c0392b;
+      margin-bottom: 2em;
     }
+
     .button {
-      display: inline-block;
-      margin: 1em;
-      padding: 1em 2em;
-      font-size: 1.2em;
+      display: block;
+      width: 100%;
+      max-width: 300px;
+      margin: 1em auto;
+      padding: 1.5em;
+      font-size: 1.5em;
+      font-weight: bold;
       color: white;
       background-color: #e74c3c;
       border: none;
-      border-radius: 8px;
+      border-radius: 12px;
       text-decoration: none;
+      transition: background-color 0.3s ease;
     }
+
+    .button:hover {
+      background-color: #c0392b;
+    }
+
     .button.secondary {
       background-color: #2980b9;
+    }
+
+    .button.secondary:hover {
+      background-color: #1f6394;
     }
   </style>
 </head>
 <body>
   <h1>Notruf</h1>
-  <p>Wählen Sie den gewünschten Notrufdienst:</p>
-
-  <a href="tel:110" class="button">110 – Polizei</a>
-  <a href="tel:112" class="button secondary">112 – Feuerwehr / Rettung</a>
+  <a href="tel:110" class="button">110</a>
+  <a href="tel:112" class="button secondary">112</a>
 </body>
 </html>
