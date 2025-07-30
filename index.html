@@ -1,67 +1,105 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Notruf</title>
+  <meta charset="UTF-8">
+  <title>IT-SelfService</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-      font-family: sans-serif;
-      background-color: #f4f4f4;
+      margin: 0;
+      padding: 5vh 0;
+      background-color: #F8F9FA;
+      font-family: 'Segoe UI', 'Arial', sans-serif;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
+      gap: 6vh;
     }
 
     h1 {
-      color: #c0392b;
-      margin-bottom: 40px;
-      font-size: 4em;
-    }
-
-    .button-container {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      width: 100%;
-      max-width: 320px;
-    }
-
-    .button {
-      display: block;
-      padding: 20px;
-      font-size: 1.5em;
-      font-weight: bold;
-      color: white;
-      background-color: #e74c3c;
-      border: none;
-      border-radius: 12px;
+      font-size: 5vw;
+      color: #004f9f;
+      margin-bottom: 1vh;
       text-align: center;
+    }
+
+    .button-wrapper {
+      width: 90%;
+      max-width: 512px;
+    }
+
+    .service-btn {
+      width: 100%;
+      aspect-ratio: 3.5 / 1;
+      display: flex;
+      align-items: center;
+      border: 2px solid #5DAAF7;
+      border-radius: 20px;
+      overflow: hidden;
+      cursor: pointer;
+      background-color: white;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease-in-out;
       text-decoration: none;
-      transition: background-color 0.3s ease;
     }
 
-    .button:hover {
-      background-color: #c0392b;
+    .service-btn:hover {
+      transform: scale(1.02);
     }
 
-    .button.secondary {
-      background-color: #2980b9;
+    .btn-left {
+      width: 40%;
+      height: 100%;
+      background: linear-gradient(135deg, #2D8CF0 50%, #5DAAF7 50%);
+      clip-path: polygon(0 0, 100% 0, 50% 100%, 0 100%);
     }
 
-    .button.secondary:hover {
-      background-color: #1f6394;
+    .btn-right {
+      width: 60%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0 10px;
+      color: #4A4A4A;
+      font-size: clamp(20px, 2.8vw, 28px);
     }
   </style>
 </head>
 <body>
-  <h1>Notruf</h1>
-  <div class="button-container">
-    <a href="tel:110" class="button">110</a>
-    <a href="tel:112" class="button secondary">112</a>
+
+  <h1>IT-SelfService</h1>
+
+  <div class="button-wrapper">
+    <a href="tel:+4962619209110" class="service-btn">
+      <div class="btn-left"></div>
+      <div class="btn-right">IT Service Desk<br>anrufen</div>
+    </a>
   </div>
+
+
+  <div class="button-wrapper">
+    <a href="mailto:it-servicedesk@mpdv.com" class="service-btn">
+      <div class="btn-left"></div>
+      <div class="btn-right">IT Service Desk<br>E-Mail senden</div>
+    </a>
+  </div>
+  
+  
+    <div class="button-wrapper">
+    <a href="https://it-servicedesk.mpdv.local/otwg20/#/login?guestlogin=1" target="_blank" class="service-btn">
+      <div class="btn-left"></div>
+      <div class="btn-right">Ticket Self Service</div>
+    </a>
+  </div>
+
+
+  <div class="button-wrapper">
+    <a href="https://mos-sys-01.mpdv.local/bWebServer/Kiosk/login" target="_blank" class="service-btn">
+      <div class="btn-left"></div>
+      <div class="btn-right">Software Kiosk</div>
+    </a>
+  </div>
+
 </body>
 </html>
